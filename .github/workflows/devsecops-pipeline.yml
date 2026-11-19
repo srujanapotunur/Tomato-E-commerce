@@ -470,7 +470,7 @@ jobs:
           echo "Target URL: https://$ALB_URL"
 
       - name: OWASP ZAP - Full Scan
-        uses: zaproxy/action-full-scan@v0.10.0
+        uses: zaproxy/action-full-scan@v0.13.0
         continue-on-error: true
         with:
           target: ${{ env.APP_TARGET_URL }}
